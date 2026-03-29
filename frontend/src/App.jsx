@@ -8,8 +8,7 @@ import { UserData } from "./context/User.jsx";
 import Admin from "./pages/Admin.jsx";
 import PlayList from "./pages/PlayList.jsx";
 import Album from "./pages/Album.jsx";
-import Premium from './pages/Premium';
-import Payment from './pages/Payment';
+
 
 
 
@@ -63,8 +62,7 @@ const App = () => {
           path="/register"
           element={!isAuth ? <Register /> : <Navigate to="/" />}
         />
-        <Route path="/premium" element={<Premium />} />
-        <Route path="/payment" element={<Payment />} />
+      
       </Routes>
     </BrowserRouter>
   );
