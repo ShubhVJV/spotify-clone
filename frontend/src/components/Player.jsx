@@ -72,7 +72,7 @@ const Player = () => {
             {
                 song&&<div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
                     <div className="lg:flex items-center gap-4">
-                        <img src={song.thumbnail?song.thumbnail.url :"http://via.placeholder.com/50"} alt=""  className='w-20'/>
+                        <img src={song.thumbnail?song.thumbnail.url :"https://via.placeholder.com/50"} alt=""  className='w-20'/>
                         <div className='hidden md:block'>
                             <p className="">{song.title}</p>
                             <p className="">{song.description && song.description.slice(0,20)}...</p>
