@@ -27,9 +27,7 @@ app.use(cookieParser());
 // routes
 import userRoutes from "./routes/userRoutes.js";
 import songRoutes from "./routes/songRoutes.js";
-import paymentRoutes from "./routes/paymentRoutes.js";
 
-app.use("/api/payment", paymentRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/songs", songRoutes);
 
