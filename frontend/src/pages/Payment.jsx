@@ -3,9 +3,9 @@ import React from 'react';
 function Payment() {
 
   const handlePayment = async () => {
-    const res = await fetch("http://localhost:5000/create-order", {
-      method: "POST",
-    });
+   const res = await fetch("/create-order", {
+  method: "POST",
+});
 
     const data = await res.json();
 
